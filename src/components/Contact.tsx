@@ -42,13 +42,13 @@ export default function Contact() {
                   <div>{siteConfig.contact.emailPlaceholder}</div>
                 </div>
               </li>
-              {/* <li className="flex items-start gap-3">
+              <li className="flex items-start gap-3">
                 <MapPinIcon className="mt-0.5 h-5 w-5 shrink-0 text-violet-600" />
                 <div>
                   <div className="font-medium text-zinc-900">Office</div>
                   <div>{siteConfig.contact.addressPlaceholder}</div>
                 </div>
-              </li> */}
+              </li>
             </ul>
           </Reveal>
 
