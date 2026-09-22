@@ -1,24 +1,20 @@
 // Brand / channel-partner configuration.
-// NOTE: Several values below are intentionally left as clearly-labelled
-// placeholders per the content deck's instructions — do not reuse contact
-// details or numbers scraped from third-party marketing sites.
 
 export const siteConfig = {
   brandName: "Pebbles",
   brandLogoInitial: "P",
   brandTagline: "Pune West Real Estate Channel Partner",
-  legalDisclaimerAccepted: false,
   contact: {
-    phonePlaceholder: "Add brand phone number",
-    whatsappPlaceholder: "Add WhatsApp number",
-    emailPlaceholder: "Add brand email address",
-    addressPlaceholder: "Add office address",
-    hoursPlaceholder: "Add office hours",
+    phone: "9324307002",
+    phoneTel: "tel:9324307002",
+    whatsapp: "919324307002",
+    whatsappUrl:
+      "https://wa.me/919324307002?text=Hi%2C%20I%27m%20interested%20in%20Park%20Pebbles%2C%20Bhugaon.%20Please%20share%20more%20details.",
+    email: "", // Add business email before publishing
+    officeAddress: "", // Add office address if you want to display one
   },
-  // Official project sales-office details, sourced directly from the Park
-  // Pebbles plan booklet (a primary developer document, cross-checked against
-  // the newer "V2 Digital" unit/floor-plan booklet's back cover) — distinct
-  // from the brand's own advisory contact above.
+  projectSiteAddress:
+    "Park Pebbles, Bhugaon, Pune – 412 115, Maharashtra",
   projectOffice: {
     name: "Park Pebbles — Project Sales Office",
     address:
@@ -27,16 +23,32 @@ export const siteConfig = {
     website: "www.theparkpebbles.com",
   },
   rera: {
-    number: "PR1261012600124",
+    projectNumber: "PR1261012600124",
+    channelPartnerNumber: "A52100033587",
     verifyUrl: "https://maharera.maharashtra.gov.in",
   },
 } as const;
 
 export const navLinks = [
   { href: "#home", label: "Home" },
-  { href: "#pune-west", label: "Pune West" },
-  { href: "#park-pebbles", label: "Park Pebbles" },
+  { href: "#overview", label: "Overview" },
+  { href: "#pricing", label: "Pricing" },
+  { href: "#floor-plans", label: "Floor Plans" },
   { href: "#amenities", label: "Amenities" },
+  { href: "#location", label: "Location" },
+  { href: "#why-bhugaon", label: "Why Bhugaon" },
   { href: "#faq", label: "FAQs" },
   { href: "#contact", label: "Contact" },
 ] as const;
+
+export function contactPhoneDisplay(): string {
+  return siteConfig.contact.phone;
+}
+
+export function contactEmailDisplay(): string {
+  return siteConfig.contact.email || "Add business email";
+}
+
+export function contactOfficeDisplay(): string {
+  return siteConfig.contact.officeAddress || "Add office address (optional)";
+}

@@ -1,6 +1,12 @@
 import Container from "./ui/Container";
 import { MailIcon, MapPinIcon, PhoneIcon } from "./ui/Icons";
-import { navLinks, siteConfig } from "@/lib/site-config";
+import {
+  contactEmailDisplay,
+  contactOfficeDisplay,
+  contactPhoneDisplay,
+  navLinks,
+  siteConfig,
+} from "@/lib/site-config";
 
 export default function Footer() {
   return (
@@ -15,8 +21,8 @@ export default function Footer() {
               {siteConfig.brandName}
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-zinc-600">
-              {siteConfig.brandTagline}. Honest guidance across Bhugaon,
-              Baner, Wakad, and Hinjawadi — zero pressure, always.
+              Pune West Real Estate Channel Partner. Honest guidance across
+              Bhugaon, Baner, Wakad, and Hinjawadi — zero pressure, always.
             </p>
           </div>
 
@@ -45,35 +51,35 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-zinc-600">
               <li className="flex items-start gap-2.5">
                 <PhoneIcon className="mt-0.5 h-4 w-4 shrink-0 text-violet-600" />
-                <span>{siteConfig.contact.phonePlaceholder}</span>
+                <a href={siteConfig.contact.phoneTel} className="hover:text-violet-700">
+                  {contactPhoneDisplay()}
+                </a>
               </li>
               <li className="flex items-start gap-2.5">
                 <MailIcon className="mt-0.5 h-4 w-4 shrink-0 text-violet-600" />
-                <span>{siteConfig.contact.emailPlaceholder}</span>
+                <span>{contactEmailDisplay()}</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPinIcon className="mt-0.5 h-4 w-4 shrink-0 text-violet-600" />
-                <span>{siteConfig.contact.addressPlaceholder}</span>
+                <span>{contactOfficeDisplay()}</span>
               </li>
             </ul>
           </div>
 
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-zinc-800">
-              Park Pebbles Project Office
+              Project Site
             </h3>
-            <ul className="space-y-3 text-sm text-zinc-600">
-              <li>{siteConfig.projectOffice.address}</li>
-              <li>Ph: {siteConfig.projectOffice.phone}</li>
-              <li>{siteConfig.projectOffice.website}</li>
-            </ul>
+            <p className="text-sm leading-relaxed text-zinc-600">
+              {siteConfig.projectSiteAddress}
+            </p>
           </div>
         </div>
 
         <div className="mt-12 border-t border-zinc-200 pt-8">
           <p className="text-xs leading-relaxed text-zinc-500">
             This project is registered under MahaRERA No.{" "}
-            {siteConfig.rera.number}, available at{" "}
+            {siteConfig.rera.projectNumber}, available at{" "}
             <a
               href={siteConfig.rera.verifyUrl}
               target="_blank"
@@ -82,16 +88,30 @@ export default function Footer() {
             >
               maharera.maharashtra.gov.in
             </a>
-            . This website is for informational purposes only and does not
-            constitute an offer or contract. Images are for representation
-            purposes only. Prices, plans, and specifications are subject to
-            change without notice and should be confirmed directly with the
-            developer before booking.
+            . This website is maintained by an independent RERA-registered
+            channel partner (Registration No.{" "}
+            {siteConfig.rera.channelPartnerNumber}) and is for informational
+            purposes only; it does not constitute an offer or contract. Images
+            are for representation purposes only. Prices, plans, and
+            specifications are subject to change without notice and should be
+            confirmed directly with the developer before booking.
           </p>
+          <div className="mt-4 flex flex-wrap gap-4 text-xs text-zinc-500">
+            <a href="#" className="hover:text-violet-700">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-violet-700">
+              Terms &amp; Conditions
+            </a>
+            <a href="#" className="hover:text-violet-700">
+              Disclaimer
+            </a>
+          </div>
           <p className="mt-4 text-xs text-zinc-500">
             © {new Date().getFullYear()} {siteConfig.brandName}. All rights
             reserved. {siteConfig.brandName} is an independent RERA-registered
-            channel partner and is not the developer of Park Pebbles.
+            channel partner (RERA No. {siteConfig.rera.channelPartnerNumber}) and
+            is not the developer of Park Pebbles.
           </p>
         </div>
       </Container>

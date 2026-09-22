@@ -1,47 +1,55 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import TrustBar from "@/components/TrustBar";
-import WhyPuneWest from "@/components/WhyPuneWest";
-import HowWeHelp from "@/components/HowWeHelp";
-import ParkPebblesHero from "@/components/ParkPebblesHero";
+import ProjectAtGlance from "@/components/ProjectAtGlance";
 import ProjectOverview from "@/components/ProjectOverview";
+import Highlights from "@/components/Highlights";
 import ConfigPricing from "@/components/ConfigPricing";
-import Amenities from "@/components/Amenities";
+import PaymentPlans from "@/components/PaymentPlans";
 import FloorPlans from "@/components/FloorPlans";
-import Location from "@/components/Location";
+import Amenities from "@/components/Amenities";
+import Specifications from "@/components/Specifications";
 import Gallery from "@/components/Gallery";
+import Location from "@/components/Location";
+import WhyPuneWest from "@/components/WhyPuneWest";
 import WhyInvest from "@/components/WhyInvest";
 import Developer from "@/components/Developer";
-import FAQ from "@/components/FAQ";
+import ReraSection from "@/components/ReraSection";
+import HowWeHelp from "@/components/HowWeHelp";
 import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import MobileStickyBar from "@/components/MobileStickyBar";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="pb-20 lg:pb-0">
         <Hero />
-        <TrustBar />
-        <WhyPuneWest />
-        <HowWeHelp />
-        <ParkPebblesHero />
+        <ProjectAtGlance />
         <ProjectOverview />
+        <Highlights />
         <ConfigPricing />
-        <Amenities />
+        <PaymentPlans />
         <FloorPlans />
-        <Location />
+        <Amenities />
+        <Specifications />
         <Gallery />
+        <Location />
+        <WhyPuneWest />
         <WhyInvest />
         <Developer />
-        <FAQ />
+        <ReraSection />
+        <HowWeHelp />
         <Testimonials />
+        <FAQ />
         <About />
         <Contact />
       </main>
       <Footer />
+      <MobileStickyBar />
     </>
   );
 }

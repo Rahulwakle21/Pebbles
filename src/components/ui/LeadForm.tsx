@@ -13,11 +13,11 @@ const budgetRanges = [
 ];
 
 const configOptions = [
-  "2 RLK Optima",
-  "2 RLK Ultima",
-  "3 RLK Optima",
-  "3 RLK Ultima",
-  "3 RLK Grande",
+  "2 BHK Optima",
+  "2 BHK Ultima",
+  "3 BHK Optima",
+  "3 BHK Ultima",
+  "3 BHK Grande",
   "Not sure yet",
 ];
 

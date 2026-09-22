@@ -4,20 +4,20 @@ import Reveal from "./ui/Reveal";
 import { CheckIcon } from "./ui/Icons";
 
 const marketInsights = [
-  "Bhugaon and neighbouring Pune West micro-markets remain priced meaningfully below established Baner/Kothrud rates",
-  "Major infra drivers: Mumbai–Pune Highway access, Chandani Chowk improvements, Vanaz Metro (Aqua Line) extension",
+  "Bhugaon sits directly beside Kothrud, Baner, and Hinjawadi, while pricing well below all three",
+  "Key growth drivers: Mumbai–Pune Highway access, Chandani Chowk infrastructure upgrades, and the Vanaz Metro (Aqua Line) extension",
   "Premium residential supply remains limited relative to demand — a key driver of price appreciation",
-  "IT & business hubs at Hinjawadi continue to anchor rental and resale demand across the corridor",
+  "Hinjawadi's IT and business hubs continue to anchor rental and resale demand across the corridor",
 ];
 
 export default function WhyPuneWest() {
   return (
-    <section id="pune-west" className="relative px-6 py-20 sm:py-28">
+    <section id="why-bhugaon" className="relative px-6 py-20 sm:py-28">
       <Container size="wide">
         <SectionHeading
-          eyebrow="Why Pune West"
+          eyebrow="Why Bhugaon / Pune West"
           title="The Corridor Rewriting Pune's Growth Map"
-          description="Stretching from Kothrud's edge through Bavdhan, Baner, and Wakad, out to Hinjawadi and Bhugaon — Pune West has quietly become the city's most consistent real estate growth story."
+          description="Stretching from Kothrud's edge through Bavdhan, Baner, and Wakad, out to Hinjawadi and Bhugaon, Pune West has quietly become the city's most consistent real-estate growth story."
         />
 
         <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
@@ -38,17 +38,7 @@ export default function WhyPuneWest() {
               cost meaningfully less per square foot than the established
               micro-markets they border, while offering something those
               markets have largely lost — open skies, cleaner air, and room
-              to breathe. Add rising infrastructure investment and shrinking
-              premium land supply, and the price-appreciation story writes
-              itself: early movers in Pune West&apos;s inner corridors have
-              already seen strong value growth, and that trend shows no sign
-              of slowing.
-            </p>
-            <p>
-              This is exactly why we built our business here. Pune West
-              rewards buyers who move with the right information, at the
-              right time, through the right advisor — and that&apos;s the gap
-              we exist to close.
+              to breathe.
             </p>
           </Reveal>
 
@@ -58,19 +48,14 @@ export default function WhyPuneWest() {
               className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition-colors hover:border-violet-200"
             >
               <span className="mb-3 inline-block rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-amber-700">
-                Featured Micro-Market
+                Bhugaon micro-market snapshot
               </span>
-              <h3 className="mb-2 text-xl font-semibold text-zinc-900">
-                Bhugaon
-              </h3>
               <p className="text-sm leading-relaxed text-zinc-600">
-                Pune West&apos;s newest growth frontier — quieter and greener
-                than its established neighbours, but rapidly closing the
-                connectivity gap to Kothrud, Baner, and Hinjawadi. Buyers
-                choose Bhugaon for cleaner air, larger land parcels (meaning
-                better-planned, lower-density projects), and meaningfully
-                lower entry prices than the corridor it borders — with strong
-                upside as infrastructure catches up.
+                Third-party portals quote average Bhugaon rates around
+                ₹7,500/sq.ft, with 2 BHK homes typically ranging ₹62–90 Lakh
+                and 3 BHK ₹90 Lakh–₹1.5 Cr — treat these as directional
+                market context, not guaranteed figures, and refresh them
+                periodically.
               </p>
             </Reveal>
 
@@ -79,7 +64,7 @@ export default function WhyPuneWest() {
               className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm"
             >
               <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-zinc-800">
-                Market Insight Snapshot
+                Key growth drivers
               </h3>
               <ul className="space-y-3">
                 {marketInsights.map((insight) => (

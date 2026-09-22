@@ -85,7 +85,7 @@ export default function Developer() {
                 RERA Registration
               </h3>
               <p className="mb-1 text-lg font-semibold text-zinc-900">
-                {siteConfig.rera.number}
+                {siteConfig.rera.projectNumber}
               </p>
               <p className="text-sm leading-relaxed text-zinc-600">
                 Verify all official project details directly on the{" "}

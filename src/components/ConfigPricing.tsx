@@ -15,7 +15,7 @@ export default function ConfigPricing() {
         <SectionHeading
           eyebrow="Configurations & Pricing"
           title="Five Layouts, One Thoughtful Design Philosophy"
-          description="Every layout at Park Pebbles is built to maximise light, ventilation, and usable space — from an efficient 2 RLK to the flagship 3 RLK Grande."
+          description="Every layout at Park Pebbles is built to maximise light, ventilation, and usable space — from an efficient 2 BHK to the flagship 3 BHK Grande."
         />
 
         <Reveal className="hidden overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm sm:block">
@@ -83,20 +83,24 @@ export default function ConfigPricing() {
         >
           <div>
             <h3 className="mb-1 text-lg font-semibold text-zinc-900">
-              Flexible, Construction-Linked Payment Plans
+              Get Today&apos;s Exact Pricing
             </h3>
             <p className="max-w-xl text-sm leading-relaxed text-zinc-600">
-              Park Pebbles offers flexible payment plans designed to ease
-              your cash flow through possession — with dedicated support for
-              home loan processing and documentation. Exact pricing and
-              current developer offers are best confirmed with our advisory
-              team, since they&apos;re revised periodically.
+              Exact pricing and current developer offers are best confirmed
+              with our advisory team, since they&apos;re revised periodically.
+              Indicative prices above are marked with * until verified for
+              your configuration.
             </p>
           </div>
-          <Button href="#contact" size="lg" className="w-full shrink-0 sm:w-auto">
-            Get Today&apos;s Exact Pricing
-            <ArrowRightIcon className="h-4 w-4" />
-          </Button>
+          <div className="flex w-full shrink-0 flex-col gap-3 sm:w-auto">
+            <Button href="#contact" size="lg" className="w-full sm:w-auto">
+              Get Today&apos;s Exact Pricing
+              <ArrowRightIcon className="h-4 w-4" />
+            </Button>
+            <Button href="#contact" variant="secondary" size="lg" className="w-full sm:w-auto">
+              Download Cost Sheet
+            </Button>
+          </div>
         </Reveal>
       </Container>
     </section>

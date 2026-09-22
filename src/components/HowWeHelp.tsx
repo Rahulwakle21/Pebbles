@@ -6,13 +6,13 @@ import { howWeHelpSteps } from "@/lib/park-pebbles-data";
 export default function HowWeHelp() {
   return (
     <section
-      id="how-it-works"
+      id="how-we-help"
       className="relative border-t border-zinc-200 bg-zinc-50 px-6 py-20 sm:py-28"
     >
       <Container size="wide">
         <SectionHeading
-          eyebrow="Our Process"
-          title="How We Help You Buy"
+          eyebrow="How We Help"
+          title="Advisory Process"
           description="A straightforward, four-step path from first enquiry to holding your keys — with an advisor beside you at every step."
         />
 
