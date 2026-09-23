@@ -23,10 +23,6 @@ export default function ReraSection() {
             details, and the sanctioned possession date — directly on the
             MahaRERA portal.
           </p>
-          <p className="mb-2 text-sm text-zinc-600">
-            Channel Partner Registration No.{" "}
-            <strong>{siteConfig.rera.channelPartnerNumber}</strong>
-          </p>
           <p className="mb-8 text-xs text-zinc-500">
             Add the MahaRERA QR code image here once your compliance advisor
             confirms placement and format.

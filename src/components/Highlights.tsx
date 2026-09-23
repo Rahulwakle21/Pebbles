@@ -49,11 +49,11 @@ export default function Highlights() {
                 performing arts, right within the community their children grow
                 up in.
               </p>
-              <p className="text-xs leading-relaxed text-zinc-500">
+              {/* <p className="text-xs leading-relaxed text-zinc-500">
                 We use the generic phrase &ldquo;legend-led academies&rdquo;
                 until written confirmation from the developer allows naming
                 specific academy partners on this site.
-              </p>
+              </p> */}
               <p className="mt-6 text-sm font-medium italic text-violet-800">
                 &ldquo;A better everyday for parents. A stronger tomorrow for
                 children.&rdquo;

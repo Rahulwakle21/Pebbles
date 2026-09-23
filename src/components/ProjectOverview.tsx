@@ -49,11 +49,11 @@ export default function ProjectOverview() {
                 </button>
               </>
             )}
-            <p className="text-xs text-zinc-500">
+            {/* <p className="text-xs text-zinc-500">
               *Land parcel stated as 7.25 acres on developer and partner
               materials — confirm the correct figure ({projectFacts.landParcel})
               before publishing.
-            </p>
+            </p> */}
           </Reveal>
 
           <Reveal delay={100}>

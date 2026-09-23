@@ -107,11 +107,12 @@ export default function Footer() {
               Disclaimer
             </a>
           </div>
-          <p className="mt-4 text-xs text-zinc-500">
+          <p className="mt-4 text-[11px] leading-relaxed text-zinc-400">
             © {new Date().getFullYear()} {siteConfig.brandName}. All rights
             reserved. {siteConfig.brandName} is an independent RERA-registered
-            channel partner (RERA No. {siteConfig.rera.channelPartnerNumber}) and
-            is not the developer of Park Pebbles.
+            channel partner (Registration No.{" "}
+            {siteConfig.rera.channelPartnerNumber}) and is not the developer of
+            Park Pebbles.
           </p>
         </div>
       </Container>

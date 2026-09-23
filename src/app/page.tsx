@@ -21,10 +21,11 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import MobileStickyBar from "@/components/MobileStickyBar";
+import EnquiryModalProvider from "@/components/EnquiryModalProvider";
 
 export default function Home() {
   return (
-    <>
+    <EnquiryModalProvider>
       <Header />
       <main className="pb-20 lg:pb-0">
         <Hero />
@@ -50,6 +51,6 @@ export default function Home() {
       </main>
       <Footer />
       <MobileStickyBar />
-    </>
+    </EnquiryModalProvider>
   );
 }

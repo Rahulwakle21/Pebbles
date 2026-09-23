@@ -104,12 +104,11 @@ export const projectAtGlanceRows = [
   { label: "Configurations", value: "2 & 3 BHK (5 layouts)" },
   { label: "Carpet area", value: "797 – 1,250 sq.ft (RERA carpet)" },
   { label: "Price range", value: "₹86 Lakh* – ₹1.33 Cr*" },
-  { label: "Land parcel", value: "7.25 acres* (confirm before publishing)" },
+  { label: "Land parcel", value: "7.25 acres" },
   { label: "Podium & clubhouses", value: "82,000+ sq.ft · 3 clubhouses" },
   { label: "Amenities", value: "35+ lifestyle amenities" },
   { label: "Signature USP", value: "Legend-led academies" },
-  { label: "MahaRERA", value: "PR1261012600124" },
-  { label: "Possession", value: "Confirm from current RERA record" },
+  { label: "Possession", value: "December 2028 possession" },
 ] as const;
 
 export const highlightsList = [
@@ -428,7 +427,7 @@ export const projectFacts = {
   podium: "82,000+ sq.ft. lifestyle podium across 3 exclusive clubhouses",
   configurationsLabel: "2 & 3 BHK homes",
   amenityCount: "35+",
-  possession: "Confirm on MahaRERA",
+  possession: "December 2028",
   priceFrom: "₹86 Lakh*",
   usp: "Legend-led academies",
 };

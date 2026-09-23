@@ -1,6 +1,6 @@
 import Container from "./ui/Container";
 import Reveal from "./ui/Reveal";
-import { CheckIcon, ShieldCheckIcon } from "./ui/Icons";
+import { CheckIcon } from "./ui/Icons";
 import { whyChooseUs } from "@/lib/park-pebbles-data";
 import { siteConfig } from "@/lib/site-config";
 
@@ -10,8 +10,8 @@ export default function About() {
       <Container size="wide">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>
-            <span className="mb-4 inline-flex items-center rounded-full border border-violet-200 bg-violet-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-violet-700">
-              About Us (Channel Partner)
+            <span className="mb-4 inline-flex items-center rounded-full border border-zinc-200 bg-zinc-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-zinc-600">
+              About Us
             </span>
             <h2 className="mb-5 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
               Depth, Not Breadth — Pune West Is All We Do
@@ -33,17 +33,6 @@ export default function About() {
               across the whole city.
             </p>
 
-            <div className="mt-8 flex items-start gap-3 rounded-2xl border border-violet-200 bg-violet-50 p-5">
-              <ShieldCheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-violet-700" />
-              <div>
-                <p className="text-sm font-semibold text-zinc-900">
-                  RERA-Registered Channel Partner
-                </p>
-                <p className="text-sm text-zinc-600">
-                  Registration No. {siteConfig.rera.channelPartnerNumber}
-                </p>
-              </div>
-            </div>
           </Reveal>
 
           <Reveal delay={100}>

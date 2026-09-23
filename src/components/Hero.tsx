@@ -2,12 +2,7 @@ import Container from "./ui/Container";
 import Reveal from "./ui/Reveal";
 import Button from "./ui/Button";
 import ProjectImage from "./ui/ProjectImage";
-import {
-  ArrowRightIcon,
-  DownloadIcon,
-  PhoneIcon,
-  ShieldCheckIcon,
-} from "./ui/Icons";
+import { ArrowRightIcon, DownloadIcon, PhoneIcon } from "./ui/Icons";
 import { heroStatChips } from "@/lib/park-pebbles-data";
 import { siteConfig } from "@/lib/site-config";
 
@@ -30,22 +25,11 @@ export default function Hero() {
       <Container className="relative z-10" size="wide">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
-            <Reveal>
-              <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-4 py-1.5 text-sm text-violet-700">
-                <ShieldCheckIcon className="h-4 w-4 shrink-0" />
-                RERA-Registered Channel Partner · Pune West Specialist
-              </span>
-            </Reveal>
-
             <Reveal delay={60}>
               <h1 className="mb-4 text-3xl font-bold leading-[1.12] tracking-tight text-zinc-900 sm:text-5xl lg:text-[3.25rem]">
-                Park Pebbles, Bhugaon — Homes Built Around Your Child&apos;s
+                Park Pebbles, Bhugaon - Homes Built Around Your Child&apos;s
                 Future
               </h1>
-              <p className="mb-2 text-sm font-medium text-violet-700 sm:text-base">
-                MahaRERA {siteConfig.rera.projectNumber} · Channel Partner{" "}
-                {siteConfig.rera.channelPartnerNumber}
-              </p>
             </Reveal>
 
             <Reveal delay={120}>
@@ -74,15 +58,15 @@ export default function Hero() {
                   </div>
                 ))}
               </div>
-              <p className="mb-8 text-xs text-zinc-500">
+              {/* <p className="mb-8 text-xs text-zinc-500">
                 *Confirm land parcel (7.25 vs 7.5 acres) and whether ₹86 Lakh
                 is basic or all-inclusive with our team before booking.
-              </p>
+              </p> */}
             </Reveal>
 
             <Reveal delay={200}>
-              <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                <Button href="#contact" size="lg" className="w-full sm:w-auto">
+              <div className="mb-8 flex flex-col gap-3">
+                <Button href="#contact" size="lg" className="w-full">
                   Schedule a Site Visit
                   <ArrowRightIcon className="h-4 w-4" />
                 </Button>
@@ -90,7 +74,7 @@ export default function Hero() {
                   href="#contact"
                   variant="secondary"
                   size="lg"
-                  className="w-full sm:w-auto"
+                  className="w-full"
                 >
                   <DownloadIcon className="h-4 w-4" />
                   Download Brochure
@@ -99,7 +83,7 @@ export default function Hero() {
                   href={siteConfig.contact.phoneTel}
                   variant="secondary"
                   size="lg"
-                  className="w-full sm:w-auto"
+                  className="w-full"
                 >
                   <PhoneIcon className="h-4 w-4" />
                   Call {siteConfig.contact.phone}
@@ -108,15 +92,16 @@ export default function Hero() {
             </Reveal>
 
             <Reveal delay={240}>
-              <ul className="flex flex-wrap gap-x-4 gap-y-2 text-xs text-zinc-600 sm:text-sm">
+              <ul className="flex flex-col gap-2 text-xs text-zinc-600 sm:text-sm">
                 {trustStrip.map((item) => (
                   <li key={item} className="flex items-center gap-1.5">
-                    <span className="h-1.5 w-1.5 rounded-full bg-violet-500" />
+                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-violet-500" />
                     {item}
                   </li>
                 ))}
               </ul>
             </Reveal>
+
           </div>
 
           <Reveal delay={100} direction="none">
